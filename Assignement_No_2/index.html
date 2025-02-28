@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment No 2</title>
+    <style>
+       /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #0066ff, #0099ff);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation */
+nav {
+    background-color: #ffffff;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 0 10px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #007bff;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Section Styling */
+section {
+    padding: 50px 20px;
+    text-align: center;
+    max-width: 1100px;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #007bff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* Department & Committees */
+ul, ol {
+    text-align: left;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+ul li, ol li {
+    background: #e3f2fd;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* College Image */
+img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 2px solid #007bff;
+    font-size: 18px;
+}
+
+th {
+    background: #007bff;
+    color: white;
+    font-size: 20px;
+}
+
+/* Form Styling */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+form button:hover {
+    background: #0056b3;
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+
+    section {
+        padding: 30px;
+    }
+
+    table, th, td {
+        font-size: 16px;
+    }
+
+    form {
+        padding: 20px;
+    }
+}
+
+    
+    </style>
+</head>
+<body>
+    <header>
+        <h1>WELCOME TO OUR COLLEGE WEBSITE </h1>
+    </header>
+
+    <nav>
+        <a href="departments">Departments</a>
+        <a href="faculty">Faculty</a>
+    </nav>
+
+    <section>
+        <h2>Our Departments</h2>
+        <ul>
+            <li>Computer Engineering</li>
+            <li>Information Technology Engineering</li>
+            <li>Civil Engineering</li>
+            <li>Structural Engineering</li>
+            <li>Mechanical Engineering</li>
+        </ul>
+
+        <h2>Our Commities</h2>
+        <ol>
+            <li>Student Activity Counsil</li>
+            <li>National Service Scheme</li>
+            <li>Itera</li>
+        </ol>
+
+        <h2>College Image</h2>
+        <img src="">
+        
+        <h2>Fee Structure</h2>
+        <table>
+        <thead>
+            <tr>
+            <th>Examination</th>
+            <th>Hostel</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+            <td>$500</td>
+            <td>$1500</td>
+            </tr>
+
+            <tr>
+            <td>$200</td>
+            <td>$800</td>
+            </tr>
+
+            <tr>
+            <td>$300</td>
+            <td>$1000</td>
+            </tr>
+
+        </tbody>
+        </table>
+
+        <h2 id="contact">Contact Us</h2>
+        <form action="/submit" method="POST">
+        <label>Enter your name: </label>
+        <input type="text" name="name" placeholder="Your Name" required><br>
+
+        <label>Enter Email:</label>
+        <input type="email" name="email" placeholder="Your Email" required><br>
+
+        <label>Enter Message: </label>
+        <textarea name="message" placeholder="Your Message" rows="5"></textarea><br>
+
+        <button type="submit">Send Message</button>
+        </form>
+    </section>
+</body>
+</html>

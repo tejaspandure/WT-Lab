@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Table Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+        }
+        table {
+            width: 250px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+            border:solid;
+            border-color: black;
+        }
+        td {
+            text-align: center;
+            padding: 15px;
+        }
+        input {
+            width: 100%;
+            text-align: right;
+            padding: 15px;
+            font-size: 1.5em;
+            border: none;
+            outline: none;
+            background: #222;
+            color: white;
+        }
+        button {
+            width: 100%;
+            padding: 15px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border: none;
+            background-color: #f0f0f0;
+            transition: background 0.3s;
+        }
+     
+    </style>
+    <script type="text/javascript">
+        let firstNumber = null;
+        let operator = null;
+        
+        function perform(op)
+        {
+            let display = document.getElementById("display");
+            if (op !== "=")
+            {
+                firstNumber = Number(display.value);
+                display.value = "";
+                operator = op;
+            }
+            else if (firstNumber !== null && operator)
+            {
+                let secondNumber = Number(display.value);
+                switch (operator)
+                {
+                    case "+":
+                        display.value = firstNumber + secondNumber;
+                        break;
+                    case "-":
+                        display.value = firstNumber - secondNumber;
+                        break;
+                    case "*":
+                        display.value = firstNumber * secondNumber;
+                        break;
+                    case "/":
+                        display.value = secondNumber !== 0 ? firstNumber / secondNumber:
+                        "Error";
+                        break;
+                }
+                firstNumber = null;
+                operator = null;
+            }
+        }
+        
+        function appendNumber(num)
+        {
+            let display = document.getElementById("display");
+            display.value += num;
+        }
+        
+        function clearDisplay()
+        {
+            document.getElementById("display").value = "";
+            firstNumber = null;
+            operator = null;
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <h1>Simple Calculator</h1>
+        <table>
+            <tr>
+                <td colspan="4"><input type="text" id="display" disabled></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="appendNumber(7)">7</button></td>
+                <td><button type="button" onclick="appendNumber(8)">8</button></td>
+                <td><button type="button" onclick="appendNumber(9)">9</button></td>
+                <td><button type="button" class="operator" onclick="perform('/')">/</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="appendNumber(4)">4</button></td>
+                <td><button type="button" onclick="appendNumber(5)">5</button></td>
+                <td><button type="button" onclick="appendNumber(6)">6</button></td>
+                <td><button type="button" class="operator" onclick="perform('*')">*</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="appendNumber(1)">1</button></td>
+                <td><button type="button" onclick="appendNumber(2)">2</button></td>
+                <td><button type="button" onclick="appendNumber(3)">3</button></td>
+                <td><button type="button" class="operator" onclick="perform('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="appendNumber(0)">0</button></td>
+                <td><button type="button" onclick="appendNumber('.')">.</button></td>
+                <td><button type="button" class="equal" onclick="perform('=')">=</button></td>
+                <td><button type="button" class="operator" onclick="perform('+')">+</button></td>
+            </tr>
+            <tr>
+                <td colspan="4"><button type="button" class="clear" onclick="clearDisplay()">C</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

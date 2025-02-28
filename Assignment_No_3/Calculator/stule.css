@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap");
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.button {
+  padding: 22px;
+  width: 66px;
+  margin: 0 3px;
+  border: 2px solid blue;
+  border-radius: 9px;
+  cursor: pointer;
+  font-family: Roboto italic;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.row {
+  margin: 7.5px 0px;
+}
+
+.row input {
+  margin: 0;
+  padding: 10px 0px;
+  border: none;
+  font-size: 24px;
+}
+
+article {
+  background-color: #361313;
+  border: 8px solid #999;
+}
+
+header {
+  border: 8px solid red;
+}
+
+.main {
+  border: 10px solid black;
+  border-radius: 12px;
+}

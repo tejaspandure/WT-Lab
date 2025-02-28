@@ -1,0 +1,32 @@
+.text-center {
+  text-align: center;
+  color: brown;
+}
+
+/* .bg-red {
+  background-color: red;
+} */
+
+.mx-auto {
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.item-center {
+  align-items: center;
+}
+
+footer {
+  padding: 30px 0;
+  font-family: Roboto italic;
+  text-align: center;
+  font-weight: 1000;
+  font-size: medium;
+}

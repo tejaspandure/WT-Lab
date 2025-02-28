@@ -1,0 +1,20 @@
+#sec1{
+    width:400px;
+    height: 200px;
+    padding:10px;
+    border-style: dotted;
+    border: 50px;
+    margin:50px;
+    background-color: aqua;
+    text-align: center;
+}
+#sec2{
+    width:400px;
+    height: 200px;
+    padding:10px;
+    border-style: solid;
+    border: 5px;
+    margin:50px;
+    background-color: pink;
+    text-align: center;
+}
